@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Archives on F1ux</title>
+    <link>http://localhost:1313/archives/</link>
+    <description>Recent content in Archives on F1ux</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 18 Mar 2026 02:34:44 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/archives/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/archives/test/</link>
+      <pubDate>Wed, 18 Mar 2026 02:34:44 +0800</pubDate>
+      <guid>http://localhost:1313/archives/test/</guid>
+      <description>&lt;p&gt;test&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
