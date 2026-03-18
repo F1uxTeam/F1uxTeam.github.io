@@ -49,6 +49,7 @@ maxSeeAlsoItems = 5
 customCSS = ["css/custom.css"]
 # Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
 customSCSS = []
+math = true
 
 # Custom JS
 customJS = []
@@ -193,7 +194,7 @@ url = "https://ctftime.org/team/417727"
 name = "WeChat"
 icon = "fa-brands fa-weixin fa-2x"
 weight = 7
-url = "https://mp.weixin.qq.com/s/AgqtDOvLPxJG7cBk7CgyAg" # 微信通常不直接通过URL跳转，如果需要展示二维码，可以使用自己的链接替换 "#"
+url = "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzY5NzIwOTk3Mw==&scene=124#wechat_redirect" # 微信通常不直接通过URL跳转，如果需要展示二维码，可以使用自己的链接替换 "#"
 
 [languages.en]
 languageName = ":uk:"
