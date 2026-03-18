@@ -24,8 +24,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      # 这里使用目前较稳定的拓展版版本
-      HUGO_VERSION: 0.123.7
+      # 更新到较新的版本以匹配本地
+      HUGO_VERSION: 0.158.0
     steps:
       - name: Checkout
         uses: actions/checkout@v4
