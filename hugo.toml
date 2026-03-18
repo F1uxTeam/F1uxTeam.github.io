@@ -206,12 +206,12 @@ url = "/"
 [[languages.en.menu.main]]
 name = "Archives"
 weight = 2
-url = "Archives/"
+url = "archives/"
 
 [[languages.en.menu.main]]
 name = "Members"
 weight = 3
-url = "Members/"
+url = "members/"
 
 [[languages.en.menu.main]]
 name = "About"
