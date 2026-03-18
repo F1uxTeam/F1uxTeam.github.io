@@ -151,6 +151,12 @@ icon = "fa-brands fa-github fa-2x"
 weight = 1
 url = "https://github.com/F1uxTeam/"
 
+[[params.social]]
+name = "CTFtime"
+icon = "fa-solid fa-flag fa-2x"
+weight = 2
+url = "https://ctftime.org/team/417727"
+
 #[[params.social]]
 #name = "Gitlab"
 #icon = "fa-brands fa-gitlab fa-2x"
@@ -192,6 +198,10 @@ url = "https://mp.weixin.qq.com/s/AgqtDOvLPxJG7cBk7CgyAg" # 微信通常不直�
 [languages.en]
 languageName = ":uk:"
 
+[[languages.en.menu.main]]
+name = "Home"
+weight = 1
+url = "/"
 
 [[languages.en.menu.main]]
 name = "Archives"

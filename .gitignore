@@ -1,0 +1,10 @@
+/public/
+/resources/
+/.hugo_build.lock
+/.DS_Store
+*~
+*.swp
+Thumbs.db
+Desktop.ini
+/.vscode/
+/.idea/
