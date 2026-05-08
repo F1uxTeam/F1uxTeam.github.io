@@ -12,7 +12,7 @@
 <div class="team-card">
 		<img class="avatar" src="https://y7syeu.github.io/images/avatar.jpg" alt="柿子" />
 		<h3 class="member-name">
-	<a href="https://www.baidu.com/" target="_blank" rel="noopener noreferrer">柿子</a>
+	<a href="https://f1uxteam.github.io/" target="_blank" rel="noopener noreferrer">柿子</a>
 	</h3>
 		<p class="member-bio">八千里路云和月</p>
 </div>
@@ -64,7 +64,7 @@
 <div class="team-card">
 		<img class="avatar" src="https://img.dkdun.cn/v1/2026/12/5f3d9b6cd16c2924.jpg" alt="At0si4" />
 		<h3 class="member-name">
-	<a href="https://www.baidu.com/" target="_blank" rel="noopener noreferrer">At0si4</a>
+	<a href="https://f1uxteam.github.io/" target="_blank" rel="noopener noreferrer">At0si4</a>
 	</h3>
 		<p class="member-bio">Binary Security and AI Agent Researcher</p>
 </div>
@@ -112,7 +112,7 @@
 <div class="team-card">
 		<img class="avatar" src="https://img.dkdun.cn/v1/2026/12/fbde38e3403f4d18.jpg" alt="t1dy5" />
 		<h3 class="member-name">
-	<a href="https://www.baidu.com/" target="_blank" rel="noopener noreferrer">t1dy5</a>
+	<a href="https://f1uxteam.github.io/" target="_blank" rel="noopener noreferrer">t1dy5</a>
 	</h3>
 		<p class="member-bio">混子密码手</p>
 </div>
@@ -136,7 +136,7 @@
 <div class="team-card">
 		<img class="avatar" src="https://img.dkdun.cn/v1/2026/12/a31962a6ab5215ad.jpg" alt="F3ux" />
 		<h3 class="member-name">
-	<a href="https://www.baidu.com/" target="_blank" rel="noopener noreferrer">F3ux</a>
+	<a href="https://f1uxteam.github.io/" target="_blank" rel="noopener noreferrer">F3ux</a>
 	</h3>
 		<p class="member-bio">奶龙是龙，龙趴着休息很正常</p>
 </div>
@@ -148,7 +148,6 @@
 	</h3>
 		<p class="member-bio">允许一切如其所是</p>
 </div>
-
 
 <div class="team-card">
 		<img class="avatar" src="https://img.dkdun.cn/v1/2025/12/c9ecee707ed47139.jpg" alt="butt3rf1y" />
