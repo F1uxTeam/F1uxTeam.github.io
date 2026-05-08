@@ -21,3 +21,19 @@ li,
     font-weight: 500 !important;
     letter-spacing: 1px;
 }
+
+/* ============ 战队成员卡片样式 ============ */
+.team-intro { text-align:center; margin-bottom:12px; color:#334155; font-weight:600; }
+.team-grid { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:16px; margin:10px 0; }
+.team-card { position:relative; overflow:hidden; border-radius:12px; padding:2px; color:inherit; background:transparent; box-shadow:none; transition:transform .18s ease; border:none; display:flex; flex-direction:column; align-items:center; text-align:center; }
+.team-card:hover { transform:translateY(-4px); }
+.team-card .id-badge { position:absolute; top:8px; right:8px; background:linear-gradient(90deg,#ff7a18,#ff4e50); color:#fff; padding:4px 8px; border-radius:8px; font-weight:700; font-size:12px; letter-spacing:0.6px; }
+.team-card .avatar { width:100px; height:100px; border-radius:50%; border:2px solid rgba(255,255,255,0.06); object-fit:cover; display:block; margin:6px auto 8px; background:transparent; }
+.member-name { margin:5px 0 0; font-size:22px; font-weight:700; color:inherit; }
+.member-role { margin:4px 0 6px; font-size:11px; color:inherit; text-transform:uppercase; letter-spacing:0.8px; opacity:0.85; }
+.member-bio { font-size:16px; color:inherit; line-height:1.4; margin:6px 0 4px; text-align:center; width:100%; box-sizing:border-box; }
+.content article .team-grid .team-card .member-bio { text-align:center; width:100%; box-sizing:border-box; }
+.team-card .cta { margin-top:8px; display:inline-block; padding:6px 12px; background:transparent; color:inherit; border-radius:8px; font-weight:600; text-decoration:none; }
+@media (max-width:1200px) { .team-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+@media (max-width:900px) { .team-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:640px) { .team-grid { grid-template-columns:repeat(1,minmax(0,1fr)); } .team-card { padding:10px; } .avatar { width:64px; height:64px; } }
