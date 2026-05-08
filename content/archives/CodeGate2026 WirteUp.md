@@ -1,3 +1,10 @@
++++
+date = '2026-05-08T00:00:00+08:00'
+draft = false
+title = 'CodeGate2026 Writeup'
+type = 'posts'
++++
+
 # CodeGate2026 wp by F1ux
 
 ## Pwn

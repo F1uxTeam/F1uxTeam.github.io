@@ -52,7 +52,7 @@ customSCSS = []
 math = true
 
 # Custom JS
-customJS = []
+customJS = ["js/custom.js"]
 
 # Custom remote JS files
 customRemoteJS = []
@@ -136,9 +136,13 @@ customRemoteJS = []
 #   "https://www.google-analytics.com",
 #   "https://cdn.jsdelivr.net/",
 # ]
+# Prefetch-src directive
 # prefetchsrc = ["'self'"]
-# # connect-src directive – defines valid targets for to XMLHttpRequest (AJAX), WebSockets or EventSource
 # connectsrc = ["'self'", "https://www.google-analytics.com"]
+
+[params.entry]
+toc = true
+tocOpen = true
 
 [taxonomies]
 category = "categories"

@@ -2,6 +2,7 @@
 date = '2026-03-19T03:42:21+08:00'
 draft = false
 title = 'Suctf2026 Writeup'
+type = 'posts'
 +++
 
 
