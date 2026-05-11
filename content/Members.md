@@ -132,14 +132,14 @@
 	</h3>
 		<p class="member-bio">二等柿兵</p>
 </div>
-
 <div class="team-card">
 		<img class="avatar" src="https://img.dkdun.cn/v1/2026/12/a31962a6ab5215ad.jpg" alt="F3ux" />
 		<h3 class="member-name">
-	<a href="https://f1uxteam.github.io/" target="_blank" rel="noopener noreferrer">F3ux</a>
+	<a href="https://imlzh1.github.io/" target="_blank" rel="noopener noreferrer">F3ux</a>
 	</h3>
 		<p class="member-bio">奶龙是龙，龙趴着休息很正常</p>
 </div>
+
 
 <div class="team-card">
 		<img class="avatar" src="https://fliaz.top/wp-content/uploads/2026/05/1778230357-F1iAz.jpg" alt="F1iAz" />
