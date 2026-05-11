@@ -1,10 +1,8 @@
 +++
-
-date = '2026-05-12T08:00:00+08:00'
+date = '2026-05-12T00:00:00+08:00'
 draft = false
 title = 'ACTF 2026 Writeup'
 type = 'posts'
-
 +++
 
 # ACTF2026 Writeup By F1ux
