@@ -133,7 +133,7 @@
 		<p class="member-bio">二等柿兵</p>
 </div>
 <div class="team-card">
-		<img class="avatar" src="https://img.dkdun.cn/v1/2026/12/a31962a6ab5215ad.jpg" alt="F3ux" />
+		<img class="avatar" src="https://imlzh1.github.io/imgs/tx.png" alt="F3ux" />
 		<h3 class="member-name">
 	<a href="https://imlzh1.github.io/" target="_blank" rel="noopener noreferrer">F3ux</a>
 	</h3>
@@ -155,6 +155,14 @@
 	<a href="https://buutt3rf1y.github.io/" target="_blank" rel="noopener noreferrer">butt3rf1y</a>
 	</h3>
 		<p class="member-bio">Hey Kong,Can you hear me?</p>
+</div>
+
+<div class="team-card">
+		<img class="avatar" src="https://img.dkdun.cn/v1/2026/12/c29a6bc14339e654.jpg" alt="Byte" />
+		<h3 class="member-name">
+	<a href="https://www.0xbyt3.com/" target="_blank" rel="noopener noreferrer">Byte</a>
+	</h3>
+		<p class="member-bio">区</p>
 </div>
 
 </section>
