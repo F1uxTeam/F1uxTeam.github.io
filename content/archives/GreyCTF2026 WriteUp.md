@@ -7,6 +7,9 @@ type = 'posts'
 
 # GreyCTF 2026 Writeup By F1ux
 
+经过队内师傅们的努力，本次我们取得了第二的好成绩！
+![](../img/GreyCTF2026/greyCTF2026.png)
+
 # AI
 
 ## **Jurgen's Revenge**
