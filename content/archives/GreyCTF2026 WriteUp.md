@@ -8,7 +8,7 @@ type = 'posts'
 # GreyCTF 2026 Writeup By F1ux
 
 经过队内师傅们的努力，本次我们取得了第二的好成绩！
-![](../img/GreyCTF2026/greyCTF2026.png)
+![](/img/GreyCTF2026greyCTF2026.png)
 
 # AI
 
@@ -4986,7 +4986,7 @@ print()
 print(flag)
 ```
 
-![](../img/GreyCTF2026/image.png)
+![](/img/GreyCTF2026/image.png)
 
 ### TLDR
 
@@ -6847,7 +6847,7 @@ if __name__ == "__main__":
 
 ### **Flag**
 
-![](../img/GreyCTF2026/leaked.jpg)
+![](/img/GreyCTF2026/leaked.jpg)
 
 ## AE-no-S
 
@@ -7094,7 +7094,7 @@ grey{iT5_4LL_l1N3R_aLGyBeR?_a1WaY5_HaZ_B1n...}
 
 Go directly to the Instagram account nus.greyhats, and you'll find a video where you can see the flag.
 
-![](../img/GreyCTF2026/2f172a8006ca7c929ae3f7635d7d899c.png)
+![](/img/GreyCTF2026/2f172a8006ca7c929ae3f7635d7d899c.png)
 
 grey{bibble}
 

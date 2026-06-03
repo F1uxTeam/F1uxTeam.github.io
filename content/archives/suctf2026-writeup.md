@@ -453,7 +453,7 @@ scale = conv_bias * sum(second) / (effective_bias - conv1_bias)
 
 下面是一组实际通过 `10001 /flag` 校验的卷积参数。
 
-** `conv.weight`**
+**`conv.weight`**
 
 ```
 [[ 5.8819090,   8.2369980,   9.2516950,  -3.4896755],

