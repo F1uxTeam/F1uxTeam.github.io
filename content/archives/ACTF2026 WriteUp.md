@@ -2811,7 +2811,7 @@ if __name__ == "__main__":
     main()
 ```
 
-![](/img/ACTF2026/image (1).png)
+![](/img/ACTF2026/image%20%281%29.png)
 
 ### AGPU
 
@@ -3565,7 +3565,7 @@ ins = (int(I[row], 16) - 11462713 * (pc // 4) - 918823512) & 0xffffffff
 
 公式里能直接读出几类指令的 opcode：
 
-![](../img/ACTF2026/image (2).png)
+![](/img/ACTF2026/image%20%282%29.png)
 
 把 opcode 映射回标准 RV32I 后，可以用 `llvm-objdump` 反汇编，也可以直接写模拟器跑。程序入口处先向 `0x10000000` 写入 `Hi` ，表格中 store 到这个地址会把低 8 位字符追加到 `F10`。随后跳到主函数。
 
