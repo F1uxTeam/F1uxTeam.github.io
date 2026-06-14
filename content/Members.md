@@ -37,13 +37,7 @@
 		<p class="member-bio">正在努力学习各种奇怪知识的菜鸟</p>
 </div>
 
-<div class="team-card">
-		<img class="avatar" src="https://languag3.github.io/images/avatar.jpg" alt="adwa" />
-		<h3 class="member-name">
-	<a href="https://languag3.github.io/" target="_blank" rel="noopener noreferrer">adwa</a>
-	</h3>
-		<p class="member-bio">众里寻他千百度。蓦然回首，那人却在，灯火阑珊处。</p>
-</div>
+
 
 <div class="team-card">
 		<img class="avatar" src="https://img.dkdun.cn/v1/2026/12/5e7fea696bb51b2e.jpg" alt="Saud4d3s" />
