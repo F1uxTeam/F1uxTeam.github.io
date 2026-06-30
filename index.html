@@ -6,11 +6,11 @@
     <meta name="description" content="F1ux CTF blog, writeups, archive, and members." />
     <title>F1ux</title>
     <link rel="icon" href="/assets/f1ux-logo.png" />
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/styles.css?v=logo-visual" />
     <script defer src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script defer src="/content-data.js"></script>
-    <script defer src="/app.js"></script>
+    <script defer src="/app.js?v=logo-visual"></script>
   </head>
   <body data-page="home">
     <header class="site-header" id="top">
@@ -54,13 +54,16 @@
 
     <main class="page-shell about-home">
       <section class="about-hero glass-surface" aria-labelledby="heroTitle">
-        <div class="about-mark" aria-hidden="true">
-          <img src="/assets/f1ux-logo.png" alt="" />
-        </div>
-        <div class="about-float-stack" aria-hidden="true">
-          <span><i data-lucide="terminal"></i></span>
-          <span><i data-lucide="shield"></i></span>
-          <span><i data-lucide="radar"></i></span>
+        <div class="flux-visual" aria-hidden="true">
+          <span class="flux-orbit flux-orbit-one"></span>
+          <span class="flux-orbit flux-orbit-two"></span>
+          <span class="flux-scan"></span>
+          <span class="flux-node flux-node-code"><i data-lucide="braces"></i></span>
+          <span class="flux-node flux-node-flag"><i data-lucide="flag"></i></span>
+          <span class="flux-node flux-node-shield"><i data-lucide="shield"></i></span>
+          <span class="flux-logo-core">
+            <img src="/assets/f1ux-logo.png" alt="" />
+          </span>
         </div>
         <div class="hero-copy-panel about-copy">
           <h1 id="heroTitle">F1ux</h1>

@@ -521,6 +521,23 @@ function closeReader() {
   document.body.style.overflow = "";
 }
 
+function setupHomeTextRipples() {
+  $all(".about-copy h1, .about-copy .hero-lede").forEach((element) => {
+    element.addEventListener("pointermove", (event) => {
+      const rect = element.getBoundingClientRect();
+      const x = ((event.clientX - rect.left) / rect.width) * 100;
+      const y = ((event.clientY - rect.top) / rect.height) * 100;
+      element.style.setProperty("--wave-x", `${Math.min(100, Math.max(0, x)).toFixed(1)}%`);
+      element.style.setProperty("--wave-y", `${Math.min(100, Math.max(0, y)).toFixed(1)}%`);
+    });
+
+    element.addEventListener("pointerleave", () => {
+      element.style.removeProperty("--wave-x");
+      element.style.removeProperty("--wave-y");
+    });
+  });
+}
+
 function setupInteractions() {
   $("#categoryTabs")?.addEventListener("click", (event) => {
     const button = event.target.closest("[data-category]");
@@ -611,7 +628,7 @@ function setupInteractions() {
     const y = (event.clientY - rect.top) / rect.height - 0.5;
     surface.style.setProperty("--mx", `${((x + 0.5) * 100).toFixed(1)}%`);
     surface.style.setProperty("--my", `${((y + 0.5) * 100).toFixed(1)}%`);
-    if (surface.classList.contains("motion-card")) {
+    if (surface.classList.contains("motion-card") || surface.classList.contains("about-hero")) {
       surface.style.setProperty("--rx", `${(-y * 4).toFixed(2)}deg`);
       surface.style.setProperty("--ry", `${(x * 5).toFixed(2)}deg`);
     }
@@ -634,6 +651,7 @@ function init() {
 
   if (page === "home") {
     renderHome();
+    setupHomeTextRipples();
   }
 
   if (page === "writeups") {
