@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="F1ux honors timeline." />
+    <title>Honors · F1ux</title>
+    <link rel="icon" href="/assets/f1ux-logo.png" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script defer src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script defer src="/content-data.js"></script>
+    <script defer src="/app.js"></script>
+  </head>
+  <body data-page="honors">
+    <header class="site-header" id="top">
+      <div class="nav-shell glass-surface">
+        <a class="brand" href="/" aria-label="F1ux Blog">
+          <span class="brand-mark"><img src="/assets/f1ux-logo.png" alt="F1ux" /></span>
+          <span><strong>F1ux</strong></span>
+        </a>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="/" data-nav="home">Home</a>
+          <a href="/writeups/" data-nav="writeups">Writeups</a>
+          <a href="/honors/" data-nav="honors">Honors</a>
+          <a href="/archive/" data-nav="archive">Archive</a>
+          <a href="/members/" data-nav="members">Members</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="icon-button" href="https://github.com/F1uxTeam" aria-label="GitHub"><i data-lucide="git-branch"></i></a>
+          <a class="icon-button custom-social" href="https://ctftime.org/team/417727" aria-label="CTFtime"><span class="social-icon social-ctf" aria-hidden="true"><span></span></span></a>
+          <a class="icon-button custom-social" href="https://x.com/F1ux_Team" aria-label="X"><span class="social-icon social-x" aria-hidden="true"></span></a>
+          <a class="icon-button custom-social" href="mailto:admin@f1ux.team" aria-label="Email"><span class="social-icon social-mail" aria-hidden="true"></span></a>
+          <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle theme"><i data-lucide="sun-medium"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell compact-page honors-page">
+      <section class="page-title-row">
+        <div>
+          <h1>荣誉墙</h1>
+        </div>
+      </section>
+
+      <section class="honor-board-section" aria-labelledby="honorBoardTitle">
+        <div class="honor-board glass-surface">
+          <aside class="honor-board-aside" aria-label="Honor season">
+            <span class="honor-board-kicker">F1UX HONOR LOG</span>
+            <div class="honor-board-emblem" aria-hidden="true">
+              <img src="/assets/f1ux-logo.png" alt="" />
+              <span></span>
+            </div>
+            <div class="honor-season-card">
+              <strong>2026</strong>
+              <span>4 records</span>
+            </div>
+            <div class="honor-rank-stack" aria-hidden="true">
+              <span class="rank-gold">#1</span>
+              <span class="rank-silver">#2</span>
+              <span>#4</span>
+            </div>
+          </aside>
+
+          <div class="honor-records">
+            <div class="honor-record-head" id="honorBoardTitle">
+              <span>Rank</span>
+              <span>Event</span>
+              <span>Result</span>
+              <span>年月</span>
+            </div>
+
+            <article class="honor-record is-gold">
+              <span class="honor-rank-badge">#1</span>
+              <div class="honor-record-main">
+                <h2>SUCTF2026</h2>
+              </div>
+              <strong class="honor-record-result">Champion</strong>
+              <time class="honor-record-year" datetime="2026-03">2026.03</time>
+            </article>
+
+            <article class="honor-record is-fourth">
+              <span class="honor-rank-badge">#4</span>
+              <div class="honor-record-main">
+                <h2>ACTF2026</h2>
+              </div>
+              <strong class="honor-record-result">Fourth Place</strong>
+              <time class="honor-record-year" datetime="2026-05">2026.05</time>
+            </article>
+
+            <article class="honor-record is-silver">
+              <span class="honor-rank-badge">#2</span>
+              <div class="honor-record-main">
+                <h2>Grey Cat The Flag 2026 Qualifiers</h2>
+              </div>
+              <strong class="honor-record-result">Runner-up</strong>
+              <time class="honor-record-year" datetime="2026-06">2026.06</time>
+            </article>
+
+            <article class="honor-record is-fourth">
+              <span class="honor-rank-badge">#4</span>
+              <div class="honor-record-main">
+                <h2>SekaiCTF 2026</h2>
+              </div>
+              <strong class="honor-record-result">Fourth Place</strong>
+              <time class="honor-record-year" datetime="2026-06">2026.06</time>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

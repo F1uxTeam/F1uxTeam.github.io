@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="F1ux members." />
+    <title>Members · F1ux</title>
+    <link rel="icon" href="/assets/f1ux-logo.png" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script defer src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script defer src="/content-data.js"></script>
+    <script defer src="/app.js"></script>
+  </head>
+  <body data-page="members">
+    <header class="site-header" id="top">
+      <div class="nav-shell glass-surface">
+        <a class="brand" href="/" aria-label="F1ux Blog">
+          <span class="brand-mark"><img src="/assets/f1ux-logo.png" alt="F1ux" /></span>
+          <span><strong>F1ux</strong></span>
+        </a>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="/" data-nav="home">Home</a>
+          <a href="/writeups/" data-nav="writeups">Writeups</a>
+          <a href="/honors/" data-nav="honors">Honors</a>
+          <a href="/archive/" data-nav="archive">Archive</a>
+          <a href="/members/" data-nav="members">Members</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="icon-button" href="https://github.com/F1uxTeam" aria-label="GitHub"><i data-lucide="git-branch"></i></a>
+          <a class="icon-button custom-social" href="https://ctftime.org/team/417727" aria-label="CTFtime"><span class="social-icon social-ctf" aria-hidden="true"><span></span></span></a>
+          <a class="icon-button custom-social" href="https://x.com/F1ux_Team" aria-label="X"><span class="social-icon social-x" aria-hidden="true"></span></a>
+          <a class="icon-button custom-social" href="mailto:admin@f1ux.team" aria-label="Email"><span class="social-icon social-mail" aria-hidden="true"></span></a>
+          <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle theme"><i data-lucide="sun-medium"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell members-page">
+      <section class="members-hero" aria-labelledby="membersTitle">
+        <div class="members-intro">
+          <h1 id="membersTitle">Members</h1>
+          <div class="member-stats">
+            <span><strong id="leaderMetric">0</strong> Captains</span>
+            <span><strong id="rosterMetric">0</strong> Members</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="member-toolbar glass-surface" aria-label="Member controls">
+        <label class="search-box member-search" for="memberSearch">
+          <i data-lucide="search"></i>
+          <input id="memberSearch" type="search" placeholder="搜索成员、简介" />
+        </label>
+        <div class="category-tabs member-tabs" id="memberRoleTabs">
+          <button class="category-tab is-active" type="button" data-role="All">All</button>
+          <button class="category-tab" type="button" data-role="Leader">Captain</button>
+          <button class="category-tab" type="button" data-role="Member">Members</button>
+        </div>
+      </section>
+
+      <section class="content-section member-ribbon-section" aria-label="Member signal deck">
+        <div class="member-console glass-surface">
+          <div class="member-console-top">
+            <span id="memberCount">0 members</span>
+            <span>Signal Deck</span>
+          </div>
+          <div class="member-console-body">
+            <div class="member-directory" id="memberDirectory" aria-label="Member signal deck"></div>
+            <aside class="member-lens member-profile-panel" id="memberLens" aria-live="polite"></aside>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="F1ux CTF writeups." />
+    <title>Writeups · F1ux</title>
+    <link rel="icon" href="/assets/f1ux-logo.png" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script defer src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script defer src="/content-data.js"></script>
+    <script defer src="/app.js"></script>
+  </head>
+  <body data-page="writeups">
+    <header class="site-header" id="top">
+      <div class="nav-shell glass-surface">
+        <a class="brand" href="/" aria-label="F1ux Blog">
+          <span class="brand-mark"><img src="/assets/f1ux-logo.png" alt="F1ux" /></span>
+          <span><strong>F1ux</strong></span>
+        </a>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="/" data-nav="home">Home</a>
+          <a href="/writeups/" data-nav="writeups">Writeups</a>
+          <a href="/honors/" data-nav="honors">Honors</a>
+          <a href="/archive/" data-nav="archive">Archive</a>
+          <a href="/members/" data-nav="members">Members</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="icon-button" href="https://github.com/F1uxTeam" aria-label="GitHub"><i data-lucide="git-branch"></i></a>
+          <a class="icon-button custom-social" href="https://ctftime.org/team/417727" aria-label="CTFtime"><span class="social-icon social-ctf" aria-hidden="true"><span></span></span></a>
+          <a class="icon-button custom-social" href="https://x.com/F1ux_Team" aria-label="X"><span class="social-icon social-x" aria-hidden="true"></span></a>
+          <a class="icon-button custom-social" href="mailto:admin@f1ux.team" aria-label="Email"><span class="social-icon social-mail" aria-hidden="true"></span></a>
+          <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle theme"><i data-lucide="sun-medium"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell compact-page">
+      <section class="page-title-row">
+        <div>
+          <h1>Event writeups</h1>
+        </div>
+      </section>
+
+      <section class="control-section inline-control" aria-label="Writeup controls">
+        <div class="control-shell glass-surface">
+          <label class="search-box" for="searchInput">
+            <i data-lucide="search"></i>
+            <input id="searchInput" type="search" placeholder="搜索 writeup、标签、赛事" />
+          </label>
+          <div class="category-tabs" id="categoryTabs" aria-label="Categories"></div>
+          <div class="sort-switch" aria-label="Sort mode">
+            <button class="sort-option is-active" type="button" data-sort="new">最新</button>
+            <button class="sort-option" type="button" data-sort="hot">最长</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section writeup-list-section" aria-labelledby="writeupsTitle">
+        <div class="section-head">
+          <div>
+            <h2 id="writeupsTitle">Writeups</h2>
+          </div>
+          <p id="resultCount">0 posts</p>
+        </div>
+        <div class="post-grid" id="postGrid"></div>
+      </section>
+    </main>
+
+    <aside class="reader" id="reader" aria-hidden="true">
+      <div class="reader-scrim" data-reader-close></div>
+      <article class="reader-panel reader-panel-with-toc glass-surface" role="dialog" aria-modal="true" aria-labelledby="readerTitle">
+        <button class="icon-button reader-close" type="button" data-reader-close aria-label="Close reader"><i data-lucide="x"></i></button>
+        <nav class="reader-toc" id="readerToc" aria-label="Article headings"></nav>
+        <div id="readerContent"></div>
+      </article>
+    </aside>
+  </body>
+</html>
