@@ -358,8 +358,6 @@ function renderMembers() {
 
   const visible = getVisibleMembers();
   setText("#memberCount", `${visible.length} members`);
-  setText("#leaderMetric", members.filter((member) => member.role === "Leader").length);
-  setText("#rosterMetric", members.length);
 
   if (!visible.length) {
     memberDirectory.innerHTML = `
