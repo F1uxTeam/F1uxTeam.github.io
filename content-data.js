@@ -305,7 +305,7 @@ window.F1UX_CONTENT = {
       "role": "Member",
       "avatar": "https://languag3.github.io/images/avatar.jpg",
       "url": "https://languag3.github.io/",
-      "bio": "szdson"
+      "bio": "众里寻他千百度，蓦然回首，那人却在灯火阑珊处"
     },
     {
       "name": "Calfjing",
