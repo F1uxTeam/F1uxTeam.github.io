@@ -509,7 +509,9 @@ function openReader(index) {
   reader.classList.add("is-open");
   reader.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
-  $(".reader-panel").scrollTop = 0;
+  const panel = $(".reader-panel");
+  panel.scrollTop = 0;
+  panel.style.setProperty("--reader-progress", "0");
   refreshIcons();
 }
 
@@ -535,6 +537,74 @@ function setupHomeTextRipples() {
       element.style.removeProperty("--wave-x");
       element.style.removeProperty("--wave-y");
     });
+  });
+}
+
+function setupScrollSignals() {
+  if (!$(".scroll-signal")) {
+    const signal = document.createElement("div");
+    signal.className = "scroll-signal";
+    signal.setAttribute("aria-hidden", "true");
+    signal.innerHTML = "<span></span>";
+    document.body.prepend(signal);
+  }
+
+  const root = document.documentElement;
+  const readerPanel = $(".reader-panel");
+  let frame = 0;
+
+  const update = () => {
+    frame = 0;
+    const pageMax = Math.max(root.scrollHeight - window.innerHeight, 1);
+    const pageProgress = Math.min(1, Math.max(0, window.scrollY / pageMax));
+    root.style.setProperty("--scroll-progress", pageProgress.toFixed(4));
+    root.style.setProperty("--scroll-progress-pct", `${(pageProgress * 100).toFixed(2)}%`);
+    root.style.setProperty("--scroll-dot-opacity", Math.min(1, pageProgress * 1.4).toFixed(4));
+
+    if (readerPanel) {
+      const readerMax = Math.max(readerPanel.scrollHeight - readerPanel.clientHeight, 1);
+      const readerProgress = Math.min(1, Math.max(0, readerPanel.scrollTop / readerMax));
+      readerPanel.style.setProperty("--reader-progress", readerProgress.toFixed(4));
+    }
+  };
+
+  const schedule = () => {
+    if (frame) return;
+    frame = window.requestAnimationFrame(update);
+  };
+
+  window.addEventListener("scroll", schedule, { passive: true });
+  readerPanel?.addEventListener("scroll", schedule, { passive: true });
+  update();
+}
+
+function setupTapRipples() {
+  const rippleTargets = [
+    ".primary-action",
+    ".secondary-action",
+    ".text-link",
+    ".icon-button",
+    ".category-tab",
+    ".sort-option",
+    ".post-card",
+    ".archive-row-rich",
+    ".signal-card",
+    ".honor-record",
+    ".social-strip a",
+    ".toc-link",
+  ].join(",");
+
+  document.addEventListener("click", (event) => {
+    const target = event.target.closest(rippleTargets);
+    if (!target || target.disabled) return;
+
+    const rect = target.getBoundingClientRect();
+    const ripple = document.createElement("span");
+    ripple.className = "tap-ripple";
+    ripple.style.setProperty("--ripple-x", `${event.clientX - rect.left}px`);
+    ripple.style.setProperty("--ripple-y", `${event.clientY - rect.top}px`);
+    target.append(ripple);
+    window.setTimeout(() => ripple.remove(), 650);
   });
 }
 
@@ -621,7 +691,7 @@ function setupInteractions() {
   });
 
   document.addEventListener("pointermove", (event) => {
-    const surface = event.target.closest(".motion-card, .about-hero, .honor-board, .honor-board-aside, .honor-record, .member-lens, .reader-panel");
+    const surface = event.target.closest(".motion-card, .about-hero, .control-shell, .member-toolbar, .archive-year, .honor-board, .honor-board-aside, .honor-record, .member-console, .member-lens, .reader-panel, .social-strip");
     if (!surface) return;
     const rect = surface.getBoundingClientRect();
     const x = (event.clientX - rect.left) / rect.width - 0.5;
@@ -635,7 +705,7 @@ function setupInteractions() {
   });
 
   document.addEventListener("pointerleave", (event) => {
-    const surface = event.target.closest?.(".motion-card, .about-hero, .honor-board, .honor-board-aside, .honor-record, .member-lens, .reader-panel");
+    const surface = event.target.closest?.(".motion-card, .about-hero, .control-shell, .member-toolbar, .archive-year, .honor-board, .honor-board-aside, .honor-record, .member-console, .member-lens, .reader-panel, .social-strip");
     if (!surface) return;
     surface.style.removeProperty("--mx");
     surface.style.removeProperty("--my");
@@ -647,6 +717,8 @@ function setupInteractions() {
 function init() {
   setActiveNav();
   setupTheme();
+  setupScrollSignals();
+  setupTapRipples();
   setupInteractions();
 
   if (page === "home") {
@@ -667,6 +739,7 @@ function init() {
     renderMembers();
   }
 
+  window.dispatchEvent(new Event("scroll"));
   refreshIcons();
 }
 

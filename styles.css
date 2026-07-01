@@ -2315,38 +2315,6 @@ body.is-dim .reader-scrim {
   box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.5);
 }
 
-.social-ctf::before {
-  position: absolute;
-  left: 7px;
-  top: 5px;
-  width: 2px;
-  height: 15px;
-  content: "";
-  border-radius: 3px;
-  background: var(--cyan);
-}
-
-.social-ctf::after {
-  position: absolute;
-  left: 9px;
-  top: 5px;
-  width: 10px;
-  height: 8px;
-  content: "";
-  background: linear-gradient(135deg, var(--cyan), var(--mint));
-  clip-path: polygon(0 0, 100% 14%, 78% 50%, 100% 86%, 0 100%);
-}
-
-.social-ctf span {
-  position: absolute;
-  left: 6px;
-  bottom: 4px;
-  width: 13px;
-  height: 2px;
-  border-radius: 999px;
-  background: rgba(20, 32, 51, 0.42);
-}
-
 .social-x::before,
 .social-x::after {
   position: absolute;
@@ -2363,27 +2331,6 @@ body.is-dim .reader-scrim {
 
 .social-x::after {
   transform: rotate(-45deg);
-}
-
-.social-mail::before {
-  position: absolute;
-  width: 15px;
-  height: 11px;
-  content: "";
-  border: 2px solid var(--ink);
-  border-radius: 4px;
-}
-
-.social-mail::after {
-  position: absolute;
-  top: 8px;
-  width: 13px;
-  height: 8px;
-  content: "";
-  border-right: 2px solid var(--ink);
-  border-bottom: 2px solid var(--ink);
-  transform: rotate(45deg) skew(-10deg, -10deg);
-  transform-origin: center;
 }
 
 .honor-section {
@@ -2718,25 +2665,6 @@ body.is-dim .social-icon {
   border-color: rgba(137, 185, 207, 0.24);
 }
 
-.social-ctf::before {
-  left: 7px;
-  top: 5px;
-  width: 2px;
-  height: 16px;
-  background: var(--cyan);
-  box-shadow: 6px 12px 0 rgba(20, 32, 51, 0.25);
-}
-
-.social-ctf::after {
-  left: 9px;
-  top: 5px;
-  width: 11px;
-  height: 9px;
-  border-radius: 2px 4px 4px 2px;
-  background: linear-gradient(135deg, var(--cyan), var(--mint));
-  clip-path: polygon(0 0, 100% 13%, 78% 50%, 100% 87%, 0 100%);
-}
-
 .social-x::before,
 .social-x::after {
   width: 16px;
@@ -2753,22 +2681,6 @@ body.is-dim .social-icon {
   transform: rotate(-43deg);
 }
 
-.social-mail::before {
-  width: 16px;
-  height: 12px;
-  border: 2px solid var(--ink);
-  border-radius: 5px;
-}
-
-.social-mail::after {
-  top: 8px;
-  width: 12px;
-  height: 8px;
-  border-right: 2px solid var(--ink);
-  border-bottom: 2px solid var(--ink);
-  transform: rotate(45deg) skew(-8deg, -8deg);
-}
-
 .social-strip a {
   border: 1px solid rgba(255, 255, 255, 0.5);
   transition: transform 180ms ease, background 180ms ease, color 180ms ease;
@@ -2778,6 +2690,99 @@ body.is-dim .social-icon {
   color: var(--ink);
   background: rgba(255, 255, 255, 0.56);
   transform: translateY(-2px);
+}
+
+.native-social-icon {
+  display: inline-grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  color: var(--ink);
+  line-height: 1;
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.native-social-icon svg,
+.native-social-icon img {
+  display: block;
+}
+
+.icon-button:hover .native-social-icon,
+.social-strip a:hover .native-social-icon {
+  transform: translateY(-1px) scale(1.04);
+}
+
+.social-github {
+  width: 22px;
+  height: 22px;
+}
+
+.social-github svg {
+  width: 22px;
+  height: 22px;
+}
+
+.social-ctftime {
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.76);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.68),
+    0 8px 18px rgba(45, 75, 107, 0.1);
+}
+
+.social-ctftime img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social-email {
+  width: 25px;
+  height: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.76);
+  border-radius: 10px;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 35% 22%, rgba(255, 255, 255, 0.82), transparent 52%),
+    linear-gradient(135deg, rgba(21, 159, 187, 0.18), rgba(42, 191, 148, 0.12)),
+    rgba(255, 255, 255, 0.42);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    inset 0 -10px 18px rgba(21, 159, 187, 0.08),
+    0 8px 18px rgba(45, 75, 107, 0.1);
+}
+
+.social-email svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+body.is-dim .native-social-icon {
+  color: var(--ink);
+}
+
+body.is-dim .social-ctftime,
+body.is-dim .social-email {
+  border-color: rgba(137, 185, 207, 0.24);
+  background:
+    linear-gradient(135deg, rgba(29, 52, 69, 0.86), rgba(8, 19, 29, 0.72)),
+    rgba(10, 24, 35, 0.82);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+body.is-dim .social-ctftime img {
+  filter: saturate(0.92) brightness(1.06);
 }
 
 .honor-wall {
@@ -6524,5 +6529,167 @@ body.is-dim .honor-rank-stack .rank-silver {
   .honor-record-year {
     margin-top: -9px;
     font-size: 11px;
+  }
+}
+
+/* Global micro-interactions */
+html {
+  --scroll-progress: 0;
+}
+
+::selection {
+  color: #07171c;
+  background: rgba(42, 191, 148, 0.28);
+}
+
+body.is-dim ::selection {
+  color: #06141a;
+  background: rgba(147, 211, 225, 0.62);
+}
+
+.scroll-signal {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 60;
+  width: min(1180px, calc(100% - 32px));
+  height: 3px;
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+
+.scroll-signal span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 999px 999px;
+  background: linear-gradient(90deg, var(--cyan), var(--mint), rgba(233, 168, 45, 0.9));
+  box-shadow:
+    0 0 16px rgba(21, 159, 187, 0.34),
+    0 0 30px rgba(42, 191, 148, 0.18);
+  transform: scaleX(var(--scroll-progress));
+  transform-origin: left center;
+  transition: transform 120ms linear;
+}
+
+.scroll-signal::after {
+  position: absolute;
+  top: 0;
+  left: var(--scroll-progress-pct, 0%);
+  width: 10px;
+  height: 10px;
+  content: "";
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow:
+    0 0 0 3px rgba(21, 159, 187, 0.14),
+    0 0 18px rgba(21, 159, 187, 0.38);
+  opacity: var(--scroll-dot-opacity, 0);
+  transform: translate(-50%, -3px);
+}
+
+body.is-dim .scroll-signal span {
+  box-shadow:
+    0 0 18px rgba(147, 211, 225, 0.24),
+    0 0 34px rgba(42, 191, 148, 0.16);
+}
+
+.tap-ripple {
+  position: absolute;
+  left: var(--ripple-x);
+  top: var(--ripple-y);
+  z-index: 3;
+  width: 12px;
+  height: 12px;
+  pointer-events: none;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, rgba(255, 255, 255, 0.76) 0 24%, rgba(42, 191, 148, 0.28) 36%, transparent 72%);
+  mix-blend-mode: screen;
+  opacity: 0.74;
+  transform: translate(-50%, -50%) scale(0.35);
+  animation: tapRipple 640ms ease-out forwards;
+}
+
+.post-card,
+.archive-row-rich,
+.signal-card,
+.honor-record,
+.social-strip a,
+.toc-link,
+.category-tab,
+.sort-option,
+.icon-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.control-shell.glass-surface,
+.member-toolbar.glass-surface,
+.archive-year.glass-surface,
+.member-console.glass-surface,
+.social-strip.glass-surface {
+  background:
+    radial-gradient(circle at var(--mx, 76%) var(--my, 18%), rgba(255, 255, 255, 0.58), transparent 10rem),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.28)),
+    var(--glass);
+}
+
+body.is-dim .control-shell.glass-surface,
+body.is-dim .member-toolbar.glass-surface,
+body.is-dim .archive-year.glass-surface,
+body.is-dim .member-console.glass-surface,
+body.is-dim .social-strip.glass-surface {
+  background:
+    radial-gradient(circle at var(--mx, 76%) var(--my, 18%), rgba(42, 191, 148, 0.11), transparent 10rem),
+    linear-gradient(135deg, rgba(22, 42, 57, 0.88), rgba(8, 19, 29, 0.72)),
+    var(--glass);
+}
+
+.reader-panel::before {
+  position: absolute;
+  top: 0;
+  left: 22px;
+  right: 22px;
+  z-index: 5;
+  height: 3px;
+  content: "";
+  border-radius: 0 0 999px 999px;
+  background: linear-gradient(90deg, var(--cyan), var(--mint), rgba(233, 168, 45, 0.86));
+  box-shadow: 0 0 18px rgba(21, 159, 187, 0.28);
+  transform: scaleX(var(--reader-progress, 0));
+  transform-origin: left center;
+}
+
+.reader-panel.has-toc::before {
+  left: 18px;
+  right: 18px;
+}
+
+@keyframes tapRipple {
+  0% {
+    opacity: 0.72;
+    transform: translate(-50%, -50%) scale(0.35);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(13);
+  }
+}
+
+@media (max-width: 700px) {
+  .scroll-signal {
+    width: calc(100% - 24px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-signal span {
+    transition: none;
+  }
+
+  .tap-ripple {
+    display: none;
   }
 }
