@@ -299,6 +299,20 @@ window.F1UX_CONTENT = {
       "avatar": "https://img.dkdun.cn/v1/2026/12/c29a6bc14339e654.jpg",
       "url": "https://www.0xbyt3.com/",
       "bio": "区"
+    },
+    {
+      "name": "zxczxc",
+      "role": "Member",
+      "avatar": "https://languag3.github.io/images/avatar.jpg",
+      "url": "https://languag3.github.io/",
+      "bio": "szdson"
+    },
+    {
+      "name": "Calfjing",
+      "role": "Member",
+      "avatar": "https://calfj1ng.github.io/avatar.jpg",
+      "url": "https://calfj1ng.github.io/",
+      "bio": "世界很大，请留下你的痕迹"
     }
   ]
 };
