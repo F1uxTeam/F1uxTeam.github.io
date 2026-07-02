@@ -175,7 +175,7 @@ window.F1UX_CONTENT = {
       "bio": "菜鸡web手一枚"
     },
     {
-      "name": "柿子",
+      "name": "sh1z1",
       "role": "Leader",
       "avatar": "https://y7syeu.github.io/images/avatar.jpg",
       "url": "https://f1uxteam.github.io/",
