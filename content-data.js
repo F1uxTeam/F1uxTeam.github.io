@@ -313,6 +313,13 @@ window.F1UX_CONTENT = {
       "avatar": "https://calfj1ng.github.io/avatar.jpg",
       "url": "https://calfj1ng.github.io/",
       "bio": "世界很大，请留下你的痕迹"
+    },
+    {
+      "name": "Kairos",
+      "role": "Member",
+      "avatar": "https://media.base44.com/images/public/user_689e8fc35c9fb77114d9204d/2ce1c7160_B8deaYXXvaZDc54iksUhZqjk3Z1uXMSxIgKkongb.webp",
+      "url": "https://kairos-ctf-bio.base44.app/",
+      "bio": "The most dangerous place is often the safest place"
     }
   ]
 };
