@@ -320,6 +320,13 @@ window.F1UX_CONTENT = {
       "avatar": "https://media.base44.com/images/public/user_689e8fc35c9fb77114d9204d/2ce1c7160_B8deaYXXvaZDc54iksUhZqjk3Z1uXMSxIgKkongb.webp",
       "url": "https://kairos-ctf-bio.base44.app/",
       "bio": "The most dangerous place is often the safest place"
+    },
+    {
+      "name": "Pr3d1ct",
+      "role": "Member",
+      "avatar": "https://pr3d1ct-yuy4n.github.io/images/avatar.jpg",
+      "url": "https://blog.f1ux.team/",
+      "bio": "想说的一句话"
     }
   ]
 };
