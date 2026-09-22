@@ -327,6 +327,13 @@ window.F1UX_CONTENT = {
       "avatar": "https://pr3d1ct-yuy4n.github.io/images/avatar.jpg",
       "url": "https://blog.f1ux.team/",
       "bio": "想说的一句话"
+    },
+    {
+      "name": "A1gorithms",
+      "role": "Member",
+      "avatar": "https://a1typora.oss-cn-hangzhou.aliyuncs.com/b69724980d5e4b49f620feea5b114579.jpg",
+      "url": "https://xz.aliyun.com/users/158860/news",
+      "bio": "我叫吴海洋"
     }
   ]
 };
