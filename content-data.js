@@ -334,6 +334,13 @@ window.F1UX_CONTENT = {
       "avatar": "https://a1typora.oss-cn-hangzhou.aliyuncs.com/b69724980d5e4b49f620feea5b114579.jpg",
       "url": "https://xz.aliyun.com/users/158860/news",
       "bio": "我叫吴海洋"
+    },
+    {
+      "name": "ACHUX21",
+      "role": "Member",
+      "avatar": "https://w.wallhaven.cc/full/42/wallhaven-428gj9.jpg",
+      "url": "https://blog.achux.xyz",
+      "bio": "meow~ lost in the wired"
     }
   ]
 };
